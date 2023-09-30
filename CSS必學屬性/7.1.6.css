@@ -1,0 +1,26 @@
+.box {
+    height: 100vh;
+    display: flex;
+}
+
+.wrap .box:nth-of-type(odd) {
+    background-color: #ddd;
+}
+
+.wrap .box:nth-of-type(even) {
+    background-color: #aaa;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    position: sticky; /*CSS properties related to sticky*/
+    top: 10px; /*CSS properties related to sticky*/
+    margin: 10px;
+    text-align: center; /*text attribute*/
+    line-height: 100px; /*text attribute*/
+}

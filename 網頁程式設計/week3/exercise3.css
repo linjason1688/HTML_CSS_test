@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner {
+    width: 192px;
+    height: 70px;
+    background-color: black;
+    animation-name: actions;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    position: absolute;
+}
+
+table {
+    width: 100%;
+    height: 8vh;
+}
+
+.leftAreaTable {
+    width: 10%;
+}
+
+.rightAreaTable {
+    width: 90%;
+    font-size: 32pt;
+    text-align: center;
+    font-family: '標楷體';
+    color: white;
+}
+
+@keyframes actions {
+    0% {
+        left: 0;
+        top: 10vh;
+        background-color: red;
+    }
+
+    25% {
+        left: 25%;
+        top: 10vh;
+        background-color: orange;
+    }
+
+    50%{
+        left: 50%;
+        top: 10vh;
+        background-color: greenyellow;
+    }
+
+    75%{
+        left: 75%;
+        top: 10vh;
+        background-color: pink;
+    }
+
+    100% {
+        left: 90%;
+        top: 10vh;
+        background-color: blue;
+    }
+}

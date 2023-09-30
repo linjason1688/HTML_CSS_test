@@ -1,0 +1,41 @@
+body {
+    font-family: '標楷體';
+}
+
+#content {
+    background-color: greenyellow;
+    width: 98%;
+    height: 200px;
+    margin: 0 auto 0 auto;
+}
+
+/*調整水平的對齊，用相對位置與紅色邊線線做調整*/
+#leftAreaFunction, #rightAreaDisplay {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+}
+
+#leftAreaFunction {
+    background-color: greenyellow;
+    width: 40%;
+    height: 100%;
+}
+
+.grabble {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation.*/
+.grabble:active {
+    cursor: grabbing;
+}
+
+#rightAreaDisplay {
+    background-color: pink;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收銀台</title>
+    <script type="text/javascript" src="checkout_counter.js"></script>
+</head>
+
+<body style="font-family: '標楷體';" onload="showDate();">
+    <div>
+        <h1>
+            早餐店 菜單看板
+            <span id="menuDate">更換日期的位址</span>
+        </h1>
+    </div>
+    <br>
+    <div>
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%" align="center">項目</td>
+                <td align="center">
+                    <label for="price">單價</label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" value="Coffee">Coffee
+                </td>
+                <td align="center">
+                    <label for="Rcoffee">2</label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" value="Milk">Milk
+                </td>
+                <td align="center">
+                    <label for="Rmilk">3</label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" value="Tea">Tea
+                </td>
+                <td align="center">
+                    <label for="Rtea">1</label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" value="Bread">Bread
+                </td>
+                <td align="center">
+                    <label for="Rbread">5</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <input type="submit" value="選購" onclick="pick_up();">
+    <br>
+    <br>
+    <h2>選購項目</h2>
+    <ol id="oL"></ol>
+    <br>
+</body>
+
+</html>

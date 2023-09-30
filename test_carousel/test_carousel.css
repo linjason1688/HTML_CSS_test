@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* .container {
+    width: 100%;
+    height: 94%;
+    background-color: pink;
+} */
+
+#imgList {
+    display: flex;
+    justify-content: center;
+}
+
+#imgList img{
+    width: 600px;
+    height:390px;
+}

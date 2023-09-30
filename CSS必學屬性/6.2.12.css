@@ -1,0 +1,20 @@
+.flex-object {
+    width: 600px;
+    height: 200px;
+    background-color: #ffa;
+    display: flex;
+}
+
+.one, .two, .three {
+    width: 180px;
+    margin: 10px;
+    background-color: #fa0;
+}
+
+.two {
+    align-self: flex-start;
+}
+
+/* .three {
+    align-self: center;
+} */

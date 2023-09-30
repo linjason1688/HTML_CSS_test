@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車3</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+    <script type="text/javascript" src="shopping_cart(3).js"></script>
+</head>
+<body onload="initMenu();">
+    <div>
+        <h1>
+            早餐店 菜單看板
+            <span id="menuDate">更換日期的位置</span>
+        </h1>
+    </div>
+
+    <div id="content">
+        <div id="leftAreaFunction">
+            <ul id="menuList" style="list-style: none;"></ul>
+        </div>
+        <div id="rightAreaDisplay">
+            <img id="shoppingCar" src="shoppingCar.png" width="200px" ondrop="drop(event);" ondragover="allowDrop(event);">
+        </div>
+    </div>
+    <br>
+    <div draggable="true" ondragstart="drag(ev);">
+        <input type="submit"  value="拉進購物車" id="拉進購物車" onclick="">&nbsp; &nbsp; &nbsp;
+        <input type="submit" value="總金額" id="總金額" onclick="CalculateTotal();">
+    </div>
+    <h2>購物車裡的項目</h2>
+    <ol id="oL"></ol>
+</body>
+</html>

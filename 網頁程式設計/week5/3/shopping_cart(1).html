@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車1</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+    <script type="text/javascript" src="shopping_cart(1).js"></script>
+</head>
+<body onload="initMenu();">
+    <div>
+        <h1>
+            早餐店 菜單看板
+            <span id="menuDate">更換日期的位置</span>
+        </h1>
+    </div>
+
+    <div id="content">
+        <div id="leftAreaFunction">
+            <table border="1" width="50%">
+                <tr>
+                    <td width="80%" align="center">點選項目</td>
+                    <td align="center">
+                        <label for="price">單價</label>
+                    </td>
+                </tr>
+            </table>
+            <table border="1" width="50%">
+                <tr>
+                    <td width="80%">
+                        <input type="radio" name="item" id="R0">
+                        <span id="item0">更換商品</span>
+                    </td>
+                    <td align="center">
+                        <label for="Lprice0">
+                            <span id="price0">更換價格</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <table border="1" width="50%">
+                <tr>
+                    <td width="80%">
+                        <input type="radio" name="item" id="R1">
+                        <span id="item1">更換商品</span>
+                    </td>
+                    <td align="center">
+                        <label for="Lprice1">
+                            <span id="price1">更換價格</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <table border="1" width="50%">
+                <tr>
+                    <td width="80%">
+                        <input type="radio" name="item" id="R2">
+                        <span id="item2">更換商品</span>
+                    </td>
+                    <td align="center">
+                        <label for="Lprice2">
+                            <span id="price2">更換價格</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <table border="1" width="50%">
+                <tr>
+                    <td width="80%">
+                        <input type="radio" name="item" id="R3">
+                        <span id="item3">更換商品</span>
+                    </td>
+                    <td align="center">
+                        <label for="Lprice3">
+                            <span id="price3">更換價格</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <div draggable="true" ondragstart="drag(ev);">
+                <input type="submit"  value="拉進購物車" onclick="">
+            </div>
+        </div>
+
+        <div id="rightAreaDisplay">
+            <img src="shoppingCar.png" width="200px" ondrop="drop(event);" ondragover="allowDrop(event);">
+        </div>
+    </div>
+    <br>
+    <h2>購物車裡的項目</h2>
+    <ol id="oL"></ol>
+    <br>
+    <br>
+</body>
+</html>

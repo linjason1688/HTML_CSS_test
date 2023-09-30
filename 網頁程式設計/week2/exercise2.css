@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner {
+    background-color: yellow;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 標楷體;
+    color: blue;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding-left: 1%; */
+    /* padding-right: 1% */
+}
+
+.content {
+    background-color: greenyellow;
+    width: 100%;
+    height: 450px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+/*    調整水平的對齊，用相對位置與紅色邊線線做調整>         */
+.leftAreaFunction, .rightAreaDisplay {
+    position: relative;
+    border: 1px solid red;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.leftAreaFunction {
+    background-color: greenyellow;
+    width: 20%;
+    height: 100%;
+}
+
+.rightAreaDisplay {
+    background-color: pink;
+    width: 79%;
+    height: 100%;
+}

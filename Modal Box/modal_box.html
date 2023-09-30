@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal_box</title>
+    <link rel="stylesheet" href="modal_box.css">
+    <script type="text/javascript" src="modal_box.js"></script>
+</head>
+
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" onclick="btn_click();">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="close_modal();">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == document.getElementById("myModal")) {
+            document.getElementById("myModal").style.display = "none";
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+}
+
+.banner_text {
+    color: white;
+    font-size: 24pt;
+    font-family: '標楷體';
+    position: absolute; /*若把它寫成relative，底下會多卷軸部分*/
+    animation-name: actions;
+    animation-duration: 10s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes actions {
+    0% {
+        left: 0px;
+        top: 2%;
+        background-color: red;
+    }
+
+    25% {
+        left: 25%;
+        top: 2%;
+        background-color: orange;
+    }
+
+    50% {
+        left: 50%;
+        top: 2%;
+        background-color: purple;
+    }
+
+    75% {
+        left: 75%;
+        top: 2%;
+        background-color: pink;
+    }
+
+    100% {
+        left: 94%;
+        top: 2%;
+        background-color: blue;
+    }
+}

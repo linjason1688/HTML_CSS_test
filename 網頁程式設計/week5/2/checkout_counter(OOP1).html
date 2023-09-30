@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收銀台(OOP1)</title>
+    <script type="text/javascript" src="checkout_counter(OOP1).js"></script>
+</head>
+
+<body style="font-family: '標楷體';" onload="initMenu();">
+    <div>
+        <h1>
+            早餐店 菜單看板
+            <span id="menuDate">更換日期的位址</span>
+        </h1>
+    </div>
+    <br>
+    <div>
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%" align="center">項目</td>
+                <td align="center">
+                    <label for="price">單價</label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" id="R0">
+                    <span id="item0">更換商品</span>
+                </td>
+                <td align="center">
+                    <label for="Lprice0">
+                        <span id="price0">更換價格</span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" id="R1">
+                    <span id="item1">更換商品</span>
+                </td>
+                <td align="center">
+                    <label for="Lprice1">
+                        <span id="price1">更換價格</span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" id="R2">
+                    <span id="item2">更換商品</span>
+                </td>
+                <td align="center">
+                    <label for="Lprice2">
+                        <span id="price2">更換價格</span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" width="30%">
+            <tr>
+                <td width="80%">
+                    <input type="radio" name="item" id="R3">
+                    <span id="item3">更換商品</span>
+                </td>
+                <td align="center">
+                    <label for="Lprice3">
+                        <span id="price3">更換價格</span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="選購" onclick="pick_up();">
+    </div>
+    
+    <h2>選購項目</h2>
+    <ol id="oL"></ol>
+    <br>
+</body>
+
+</html>

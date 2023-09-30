@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="switch show" @click="changeShow">
+        <img v-show="isShow" src="https://cn.vuejs.org/images/logo.png" alt="vuejs圖片">
+        <hr>
+        <p>{{ age }}</p>
+        <input type="button" value="Add age" @click="addAge">
+        <img v-show="age==18" src="https://cn.vuejs.org/images/logo.png" alt="vuejs圖片">
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                isShow: false,
+                age: 16,
+            },
+            methods: {
+                changeShow: function() {
+                    this.isShow = !this.isShow;
+                },
+                addAge: function() {
+                    this.age++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

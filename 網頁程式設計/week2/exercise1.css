@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+
+}
+
+h2 {
+    color: red;
+}
+
+h1, h2 {
+    font-family: '標楷體';
+}
+
+p {
+    font-family: 'Courier';
+    font-size: 20px;
+}

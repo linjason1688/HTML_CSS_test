@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #aaa;
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card .category {
+    padding: 0 10px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ccc;
+    order: -1;
+    align-self: flex-start;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}

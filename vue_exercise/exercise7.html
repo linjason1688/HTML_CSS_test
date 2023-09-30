@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue exercise 7</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="-" v-on:click="decrease" />
+            <span>{{ count }}</span>
+        <input type="button" value="+" @click="increase" />
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                count: 1,
+            },
+            methods: {
+                decrease: function () {
+                    if (this.count > 0) {
+                        this.count--;
+                    } else {
+                        alert("out of stock");
+                    }
+                },
+                increase: function () {
+                    if (this.count < 10) {
+                        this.count++;
+                    } else {
+                        alert("all sale, out of stock");
+                    }
+                }
+            },
+        });
+    </script>
+</body>
+</html>

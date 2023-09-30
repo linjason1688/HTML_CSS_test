@@ -1,0 +1,3 @@
+digraph "com.mycompany:20220907:war:1.0-SNAPSHOT" { 
+	"com.mycompany:20220907:war:1.0-SNAPSHOT" -> "javax:javaee-web-api:jar:7.0:provided" ; 
+ } 

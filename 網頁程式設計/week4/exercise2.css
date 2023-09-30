@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: '標楷體';
+}
+
+p {
+    background-color: yellow;
+}
+
+label {
+    background-color: greenyellow;
+}

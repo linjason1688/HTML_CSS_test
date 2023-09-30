@@ -1,0 +1,12 @@
+.flex-object {
+    width: 600px;
+    height: 350px;
+    background-color: #ffa;
+    display: flex;
+}
+
+.flex-child {
+    background-color: #fa0;
+    color: #fff;
+    margin: 5px;
+}

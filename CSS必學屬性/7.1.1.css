@@ -1,0 +1,16 @@
+.wrap {
+    padding: 2px;
+    background-color: #ccc;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #888;
+    margin: 5px;
+}
+
+.box {
+    position: absolute;
+    background-color: red;
+}

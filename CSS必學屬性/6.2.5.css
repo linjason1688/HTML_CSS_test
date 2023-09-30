@@ -1,0 +1,17 @@
+.flex-object {
+    width: 600px;
+    height: 350px;
+    background-color: #ffe990;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-child {
+    width: 190px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    background-color: #f39200;
+    margin: 5px;
+}

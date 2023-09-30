@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" placeholder="enter your todo" @keyup.enter="addTodo()" v-model="inputValue" />
+        <hr />
+        <div>
+            <p v-for="(item, index) in todos">{{index+1}}.{{item}}
+                <button @click="removeTodo(index)">X</button>
+            </p>
+        </div>
+        <hr />
+        <div v-if="todos.length !=0">
+            Total: {{todos.length}} todo
+            <button @click="clearAll">clear All</button>
+        </div>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                todos: ['學習', '睡覺', '做飯'],
+                inputValue: "",
+            },
+            methods: {
+                addTodo: function () {
+                    this.todos.push(this.inputValue);
+                    console.log(this.todos);
+                    this.inputValue = "";
+                },
+                removeTodo: function (index) {
+                    this.todos.splice(index, 1); //使用陣列方法splice(指定的index開始，刪除一筆)，依照抓到的 index刪除
+                },
+                clearAll: function () {
+                    this.todos = [];
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

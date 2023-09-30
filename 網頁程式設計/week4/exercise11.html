@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise11</title>
+    <script type="text/javascript" src="exercise11.js"></script>
+</head>
+<body style="font-family: '標楷體';">
+    <div>
+        <form>
+            姓名 <input type="text" name="name" value="">&nbsp;
+            學號 <input type="text" name="id" value="">
+        </form>
+    </div>
+
+    <h1>課程</h1>
+
+    <div>
+        <form>
+            <input type="radio" name="item" value="網際網路程式設計" checked>網際網路程式設計<br>
+            <input type="radio" name="item" value="系統分析與設計">系統分析與設計<br>
+            <input type="radio" name="item" value="作業系統">作業系統<br>
+            <input type="radio" name="item" value="專案管理">專案管理<br>
+            <input type="radio" name="item" value="生產與作業管理">生產與作業管理<br>
+        </form>
+    </div>
+    <br>
+    <input type="submit" value="選課" onclick="choose_course();">
+
+    <h2>選課的項目</h2>
+    <ol id="oL"></ol>
+</body>
+</html>
